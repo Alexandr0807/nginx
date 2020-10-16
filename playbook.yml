@@ -1,7 +1,6 @@
 ---
 - name: Install nginx
   hosts: all
-  become: yes
+  become: true
   roles:
-    - epel
     - nginx
