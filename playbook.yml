@@ -4,3 +4,7 @@
   become: true
   roles:
     - nginx
+  #epel
+- hosts: all
+  vars:
+    nginx_user: www-data
